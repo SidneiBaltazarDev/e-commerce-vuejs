@@ -21,6 +21,7 @@
                         <img :src="produto.img" :alt="produto.nome">
                     </div>
                     <div class="modal_dados">
+                        <button @click="produto = !produto" class="modal_fechar">X</button>
                         <span class="modal_preco">
                             {{produto.preco}}
                         </span>
